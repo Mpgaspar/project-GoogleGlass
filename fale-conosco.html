@@ -20,7 +20,7 @@ function calc_total() {
 <body>
 <div id="interface"> 
 
-<!--Cabeçalho-->
+<!--Header-->
 <header id="cabecalho">    
 <hgroup>          
 <h1>Google Glass</h1>
@@ -30,6 +30,7 @@ function calc_total() {
 
 <img id="icone" src="_imagens/glass-oculos-preto-peq.png" >
 
+<!--Interactive menu using JavaScript-->
 <nav id="menu">
     <h1>Menu Principal</h1>
     <ul type="circle">
@@ -53,7 +54,7 @@ function calc_total() {
             </hgroup>
         </header>
        
-<!--Formulário-->
+<!--Form-->
 <form method="POST" id="fContato" action="mailto:contato@assembler.com" oninput="calc_total();" > 
     
    <fieldset id="usuario"><legend>Identificação do Usuário</legend> 
@@ -93,17 +94,17 @@ function calc_total() {
     <option value="São Paulo"></option>
     <option value="Florianópolis"></option>
     <option value="Salvador"></option>
-   </datalist> <!--Preenchimento automático das cidades-->
+   </datalist> <!--Automatic filling of cities-->
 </fieldset>
 
-<!--Mensagem do Usuário-->
+<!--User Message-->
 <fieldset id="mensagem"><legend>Mensagem do Usuário</legend> 
    <p><label for="cUrg">Grau de Urgência:</label> Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max </p> 
    <p><label for="cMsg"> Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem">  
 </textarea> </p>
 </fieldset>
 
-<!--Solicitação do Produto-->
+<!--Product request-->
 <fieldset id="pedido"><legend>Quero um Google Glass</legend> 
    <p><input type="checkbox" name="tPed" id="cPed" checked/> 
    <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
@@ -117,7 +118,7 @@ function calc_total() {
     </article>
 </section>
 
-<!--Rodapé-->
+<!--Footer-->
 <footer id="rodape">
         <p>Copyright &copy; 2013 - by Marcelo Gaspar <br/>
         <a href="http://facebook.com/Assembler-School-of-Software-Engineering-358269725018391/" target="_blank">Facebook</a> | 
